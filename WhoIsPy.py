@@ -78,6 +78,6 @@ def validate_request(ip):
     except ConnectionRefusedError as ex:
         print(ex)
 
-#print(validate_request('82.98.86.175'))
-pprint(get_whois('82.98.86.175', iana('82.98.86.175')))
+target = input('Введите IP-адрес цели: ')
+pprint(get_whois(target, iana(target)))
 
